@@ -1,0 +1,109 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Cross-domain Correspondence Learning for Exemplar-based Image Translation</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<body>
+  <div class="container"> <span class="venue">CVPR 2020 oral</span>
+    <span class="title">Cross-domain Correspondence Learning for Exemplar-based Image Translation</span>
+    <table border="0" align="center" class="authors">
+      <tr align="center">
+        <td><a href="">Pan Zhang</a></td>
+        <td><a href="https://www.microsoft.com/en-us/research/people/zhanbo/" class="author">Bo Zhang</a></td>
+        <td><a href="https://www.microsoft.com/en-us/research/people/doch/" class="author">Dong Chen</a></td>
+        <td> <a href="https://www.microsoft.com/en-us/research/people/luyuan/">Lu Yuan</a> </td>
+        <td> <a href="https://www.microsoft.com/en-us/research/people/fangwen/">Fang Wen</a> </td>
+      </tr>
+    </table>
+    <table border="0" align="center" class="affiliations">
+      <tr>
+        <td align="center"><img src="images/microsoft_logo.png" height="40" alt="" /></td>
+        <td align="center"><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft
+            Research Asia</a></td>
+      </tr>
+    </table>
+
+    <p>&nbsp;</p>
+    <table width="200" border="0" align="center">
+      <tr>
+        <td><img src="images/teaser.png" width="950" alt="" /><br /></td>
+      </tr>
+      <tr>
+        <td class="caption">We propose an exemplar-based image synthesis. Given the exemplar images (1st row), our
+          network translates
+          the inputs
+          in the form of segmentation mask, edge and pose, to photorealistic images (2nd row) under the guidance of
+          dense
+          correspondence to the exemplar image. </td>
+      </tr>
+    </table>
+
+    <p>&nbsp;</p>
+    <span class="section">Abstract</span>
+    <p>We present a general framework for exemplar-based image translation, which synthesizes a photo-realistic image
+      from the input in a distinct domain (e.g., semantic segmentation mask, or edge map, or pose keypoints), given an
+      exemplar image. The output has the style (e.g., color, texture)
+      in consistency with the semantically corresponding objects in the exemplar. We propose to jointly learn the
+      cross domain correspondence and the image translation, where both tasks facilitate each other and thus can be
+      learned with weak supervision. The images from distinct domains are first aligned to an intermediate domain where
+      dense correspondence is established. Then, the network synthesizes images based on the appearance of semantically
+      corresponding patches in the exemplar. We demonstrate the
+      effectiveness of our approach in several image translation tasks. Our method is superior to state-of-the-art
+      methods in terms of image quality significantly, with the image style faithful to the exemplar with semantic
+      consistency. Moreover, we show the utility of our method for several applications.<br />
+    </p>
+
+    <p class="section">&nbsp;</p>
+    <span class="section">Network architecture</span>
+    <table width="200" border="0" align="center">
+      <tbody>
+        <tr>
+          <p></p>
+          <td align="center"><img src="images/architecture.png" height="280" alt="" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <td class="caption">The illustration of the CoCosNet architecture. Given the input $x_A\in A$
+        and the exemplar $y_B \in B$, the correspondence submodule adapts them into the same domain $S$, where dense
+        correspondence can be established. Then, the translation network generates the final output based on the warped
+        exemplar $r_{y\to x}$ according to the correspondence, yielding an exemplar-based translation output.</td>
+    </p>
+
+    <p>&nbsp;</p>
+    <p class="section">Paper</p>
+    <table border="0">
+      <tbody>
+        <tr>
+          <td><img src="images/paper.png" width="100" alt="" /></td>
+          <td>&nbsp;</td>
+          <td>
+            <p>&quot;Cross-domain Correspondence Learning for Exemplar-based Image Translation&quot;,<br />
+              Pan Zhang, Bo Zhang, Dong Chen, Lu Yuan and Fang Wen<br />
+              Conference on Computer Vision and Pattern Recongnition (CVPR), 2020</p>
+            <p>[<a href="">PDF</a>]
+              [<a href="">Code coming soon</a>]
+              [<a href="supplementary.pdf">Supplementary Doc.</a>][<a
+                href="https://www.dropbox.com/s/g7dezxm2mhw6gqo/CoCosNet%20slides.pptx?dl=0">Slides</a>] </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="section">&nbsp;</p>
+    <p align="center" class="date">Last updated: April 2020</p>
+  </div>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$']]}
+  });
+  </script>
+</body>
+
+</html>
