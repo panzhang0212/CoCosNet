@@ -1,0 +1,6 @@
+@article{zhang2020cross,
+  title={Cross-domain Correspondence Learning for Exemplar-based Image Translation},
+  author={Zhang, Pan and Zhang, Bo and Chen, Dong and Yuan, Lu and Wen, Fang},
+  journal={arXiv preprint arXiv:2004.05571},
+  year={2020}
+}
